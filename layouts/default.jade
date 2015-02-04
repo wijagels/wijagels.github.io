@@ -1,7 +1,7 @@
 doctype html
 html
-  block vars
   head
+    block vars
     title William Jagels
     // main styles
     link(href="/static/css/styles.css", rel="stylesheet")
@@ -10,6 +10,12 @@ html
       link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css")
   body
     .header
+      nav(class="navbar navbar-default")
+        .navbar.navbar-default
+          .navbar-header
+            ul.nav.navbar-nav
+              li.active
+                a(href="/") Home
       a(href="/") Go Home
     .container
       block content
