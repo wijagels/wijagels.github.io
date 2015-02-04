@@ -1,22 +1,23 @@
 doctype html
 html
   head
-    block vars
     title William Jagels
     // main styles
-    link(href="/static/css/styles.css", rel="stylesheet")
+    link(href="static/css/styles.css", rel="stylesheet")
     block styles
       link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
       link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css")
   body
     .header
-      nav(class="navbar navbar-default")
-        .navbar.navbar-default
-          .navbar-header
-            ul.nav.navbar-nav
-              li.active
-                a(href="/") Home
-      a(href="/") Go Home
+      .container
+        nav.navbar.navbar-default
+          .container-fluid
+            .navbar-header
+              ul.nav.navbar-nav
+                li.active
+                  a(href="/") Home
+                li
+                  a(href="/hi")
     .container
       block content
     .footer
@@ -27,4 +28,3 @@ html
       script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js")
     block analytics
       script(src="/static/js/analytics.js")
-      
