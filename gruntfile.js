@@ -49,8 +49,8 @@ module.exports = function(grunt) {
     grunt.registerTask('web', 'Start web server...', function() {
 	var options = this.options();
 	var connect = require('connect');
-	connect.createServer(
-            connect.static(__dirname)
+	connect().use(
+	    connect.static(__dirname)
 	).listen(options.port);
 	console.log('http://localhost:%s', options.port);
 
