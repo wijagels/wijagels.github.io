@@ -6,3 +6,9 @@ body {
 .navbar {
   margin-bottom: 20px;
 }
+
+.me {
+	text-align: center;
+	font-size: 42px;
+	font-family: 'Merriweather', serif;
+}
