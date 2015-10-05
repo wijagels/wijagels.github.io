@@ -61,3 +61,7 @@ footer.page-footer {
     padding-bottom: 5em;
     color: #ECF0F1;
 }
+
+body {
+  background-color: #37474f;
+}
