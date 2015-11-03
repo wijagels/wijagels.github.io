@@ -25,9 +25,10 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+
+.parallax-container .section {
+  width: 100%;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -57,11 +58,22 @@ footer.page-footer {
 }
 
 .name {
-    padding-top: 5em;
-    padding-bottom: 5em;
-    color: #ECF0F1;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
-body {
-  background-color: #37474f;
+.wrapper {
+  color: #ECF0F1;
+}
+
+.section {
+  min-height: 85vh;
+}
+
+.abme {
+  font-size: 18px;
+}
+
+.card-content {
+  color: #000000;
 }
